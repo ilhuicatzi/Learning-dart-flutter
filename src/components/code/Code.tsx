@@ -23,7 +23,7 @@ interface ColorProps {
   
     return (
       <code
-        className={`dark:bg-zinc-900 bg-zinc-100 rounded shadow dark:shadow-muted font-inconsolata select-all px-1 font-medium ${selectedColor}`}
+        className={`dark:bg-slate-900 bg-slate-100 rounded shadow dark:shadow-muted font-inconsolata select-all px-1 font-medium ${selectedColor}`}
       >
         {children}
       </code>

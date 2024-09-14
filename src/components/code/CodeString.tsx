@@ -11,8 +11,8 @@ function CodeString({ code }: { code: string }) {
     navigator.clipboard.writeText(code);
   };
   return (
-    <pre className="dark:bg-zinc-900 bg-zinc-100 my-2 rounded-md shadow dark:shadow-muted flex justify-between w-full max-w-2xl">
-      <code className="font-inconsolata font-medium select-all pl-4 py-3 text-zinc-800 dark:text-zinc-100">
+    <pre className="dark:bg-slate-900 bg-slate-100 my-2 rounded-md shadow dark:shadow-muted flex justify-between w-full max-w-2xl">
+      <code className="font-inconsolata font-medium select-all pl-4 py-3 text-slate-800 dark:text-slate-100">
         {code}
       </code>
       <div className="flex justify-end items-start">
@@ -22,7 +22,7 @@ function CodeString({ code }: { code: string }) {
               <button
                 aria-label="Copy code"
                 onClick={copyToClipboard}
-                className="bg-zinc-200 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 p-1 rounded-md"
+                className="bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 p-1 rounded-md"
               >
                 <Copy className=" w-4 h-4" />
               </button>
