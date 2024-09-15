@@ -121,25 +121,6 @@ export const arrow_functions = `var flybyObjects = ['Jupiter', 'Saturn', 'Uranus
 flybyObjects.where((name) => name.contains('turn')).forEach(print);
 `;
 
-
-export const list = `void main() {
-  var list = [1, 2, 3, 4, 5, 6];
-  final list2 = [0, ...list];
-  final list3 = [0, 1, ...list, 7, 8, 9];
-
-  print(list[1]); // 2
-  print(list2); // [0, 1, 2, 3, 4, 5, 6]
-  print(list3); // [0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-  print(list3.length); // 10
-  print(list3.isEmpty); // false
-  print(list3.isNotEmpty); // true
-  print(list3.first); // 0
-  print(list3.last); // 9
-  print(list3.removeAt(3)); // 2
-  print(list3.reversed); // (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
-}
-`;
-
 export const iterable = `void main() {
   List<int> numbers = [1, 2, 3, 4, 5];
 
