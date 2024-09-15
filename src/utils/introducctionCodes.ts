@@ -1,4 +1,4 @@
-export const holaMundo = `void main() {
+export const holaMundo1 = `void main() {
     print('Hola Mundo');
     }
 
@@ -70,24 +70,29 @@ export const variables_dinamicas = `void main() {
 
 
 export const flujo_control = `
+// if and else
 if (year >= 2001) {
   print('21st century');
 } else if (year >= 1901) {
   print('20th century');
 }
 
+// for in loop
 for (final object in flybyObjects) {
   print(object);
 }
 
+// for loop
 for (int month = 1; month <= 12; month++) {
   print(month);
 }
 
+// while loop
 while (year < 2016) {
   year += 1;
 }
 
+// try catch finally
 try {
   breedMoreLlamas();
 } catch (e) {
@@ -96,6 +101,7 @@ try {
   cleanLlamaStalls(); // Then clean up.
 }
 
+//assert
 assert(urlString.startsWith('https'),
     'URL ($urlString) should start with "https".');
 
@@ -113,4 +119,23 @@ print(result); // 6765
 
 export const arrow_functions = `var flybyObjects = ['Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 flybyObjects.where((name) => name.contains('turn')).forEach(print);
+`;
+
+
+export const list = `void main() {
+  var list = [1, 2, 3, 4, 5, 6];
+  final list2 = [0, ...list];
+  final list3 = [0, 1, ...list, 7, 8, 9];
+
+  print(list[1]); // 2
+  print(list2); // [0, 1, 2, 3, 4, 5, 6]
+  print(list3); // [0, 1, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  print(list3.length); // 10
+  print(list3.isEmpty); // false
+  print(list3.isNotEmpty); // true
+  print(list3.first); // 0
+  print(list3.last); // 9
+  print(list3.removeAt(3)); // 2
+  print(list3.reversed); // (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
+}
 `;
