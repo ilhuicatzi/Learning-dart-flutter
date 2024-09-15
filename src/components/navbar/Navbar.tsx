@@ -9,8 +9,8 @@ function Navbar() {
         <img src="/dart.svg" alt="logo de dart" className="w-9 h-9" />
         </Link>
         <div className="hidden sm:flex items-center gap-3">
-            <Link to="/" className="px-3 py-1.5 hover:bg-muted rounded-md">Home</Link>
-            <Link to="/about" className="px-3 py-1.5 hover:bg-muted rounded-md">About</Link>
+            <Link to="/dart" className="px-3 py-1.5 hover:bg-muted rounded-md">Dart</Link>
+            <Link to="/flutter" className="px-3 py-1.5 hover:bg-muted rounded-md">Flutter</Link>
             <ModeToggle />
         </div>
         <MenuColapse />

@@ -28,11 +28,11 @@ export function MenuColapse() {
 
         <nav className="flex flex-col gap-2">
         <SheetClose asChild>
-          <Link to="/" className="p-2 hover:bg-muted rounded-md">Home</Link>
+          <Link to="/dart" className="p-2 hover:bg-muted rounded-md">Dart</Link>
         </SheetClose>
 
         <SheetClose asChild>
-          <Link to="/about" className="p-2 hover:bg-muted rounded-md">About</Link> 
+          <Link to="/flutter" className="p-2 hover:bg-muted rounded-md">Flutter</Link> 
         </SheetClose>
 
         <ModeToggle />
