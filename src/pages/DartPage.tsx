@@ -4,6 +4,7 @@ import Variables from "@/components/dartPage/Variables";
 import FlujoControl from "@/components/dartPage/FlujoControl";
 import Funciones from "@/components/dartPage/Funciones";
 import Listas from "@/components/dartPage/Listas";
+import Iterables from "@/components/dartPage/Iterables";
 function DartPage() {
   return (
     <main className="w-full max-w-4xl">
@@ -13,6 +14,7 @@ function DartPage() {
       <FlujoControl />
       <Funciones />
       <Listas />
+      <Iterables />
     </main>
   );
 }

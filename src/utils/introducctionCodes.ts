@@ -139,3 +139,25 @@ export const list = `void main() {
   print(list3.reversed); // (9, 8, 7, 6, 5, 4, 3, 2, 1, 0)
 }
 `;
+
+export const iterable = `void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+
+  // Obtener un iterador
+  Iterator<int> iterator = numbers.iterator;
+
+  // Recorrer los elementos
+  while (iterator.moveNext()) {
+    print(iterator.current); // Imprime el valor actual del iterador
+  }
+}
+`;
+
+export const iterable_for_in = `void main() {
+  List<int> numbers = [1, 2, 3, 4, 5];
+
+  for (var number in numbers) {
+    print(number);
+  }
+}
+`;
