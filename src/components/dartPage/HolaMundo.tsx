@@ -1,12 +1,13 @@
 import CodeComponent from "@/components/code/CodeComponent";
 import Code from "@/components/code/Code";
+import Container from "@/components/ui/container";
 import {
   holaMundo1,
   holaMundo2,
 } from "@/utils/introducctionCodes";
 function HolaMundo() {
   return (
-    <section className="w-full flex justify-center items-start flex-col mx-20 my-10 space-y-4">
+    <Container>
     <h2 className="group text-2xl font-medium">
       Hola Mundo{" "}
       <span className="text-transparent group-hover:text-primary">#</span>
@@ -31,7 +32,7 @@ function HolaMundo() {
       sintaxis:
     </p>
     <CodeComponent code={holaMundo2} />
-  </section>
+  </Container>
   )
 }
 

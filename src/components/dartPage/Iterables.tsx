@@ -1,10 +1,11 @@
 import CodeComponent from "@/components/code/CodeComponent";
 import { iterable, iterable_for_in } from "@/utils/introducctionCodes";
 import Code from "../code/Code";
+import Container from "../ui/container";
 
 function Iterables() {
   return (
-    <section className="w-full flex justify-center items-start flex-col mx-20 my-10 space-y-4">
+    <Container>
       <h2 className="group text-2xl font-medium">
         Iterables{" "}
         <span className="text-transparent group-hover:text-primary">#</span>
@@ -31,7 +32,7 @@ function Iterables() {
         manera más sencilla:
       </p>
       <CodeComponent code={iterable_for_in} />
-    </section>
+    </Container>
   );
 }
 

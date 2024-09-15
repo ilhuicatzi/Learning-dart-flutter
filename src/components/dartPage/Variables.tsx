@@ -3,9 +3,10 @@ import {
   variables_explicitas,
   variables_dinamicas,
 } from "@/utils/introducctionCodes";
+import Container from "../ui/container";
 function Variables() {
   return (
-    <section className="w-full flex justify-center items-start flex-col mx-20 my-10 space-y-4">
+    <Container>
     <h2 className="group text-2xl font-medium">
       Variables{" "}
       <span className="text-transparent group-hover:text-primary">#</span>
@@ -20,7 +21,7 @@ function Variables() {
     <CodeComponent code={variables_explicitas} />
     <h3 className="text-xl font-medium">Variables dinámicas</h3>
     <CodeComponent code={variables_dinamicas} />
-  </section>
+  </Container>
   )
 }
 

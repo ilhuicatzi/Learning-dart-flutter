@@ -1,10 +1,10 @@
 import CodeComponent from "@/components/code/CodeComponent";
 import { list } from "@/utils/introducctionCodes";
-
+import Container from "../ui/container";
 
 function Listas() {
   return (
-    <section className="w-full flex justify-center items-start flex-col mx-20 my-10 space-y-4">
+    <Container>
     <h2 className="group text-2xl font-medium">
       Listas{" "}
       <span className="text-transparent group-hover:text-primary">#</span>
@@ -32,7 +32,7 @@ function Listas() {
     </ul>
 
     <CodeComponent code={list} />
-    </section>
+    </Container>
   )
 }
 

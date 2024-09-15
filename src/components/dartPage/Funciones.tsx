@@ -1,10 +1,11 @@
 import CodeComponent from "@/components/code/CodeComponent";
 import { funciones, arrow_functions } from "@/utils/introducctionCodes";
 import Code from "@/components/code/Code";
+import Container from "../ui/container";
 
 function Funciones() {
   return (
-    <section className="w-full flex justify-center items-start flex-col mx-20 my-10 space-y-4">
+    <Container>
       <h2 className="group text-2xl font-medium">
         Funciones{" "}
         <span className="text-transparent group-hover:text-primary">#</span>
@@ -30,7 +31,7 @@ function Funciones() {
         sintaxis de función de flecha:
       </p>
       <CodeComponent code={arrow_functions} />
-    </section>
+    </Container>
   );
 }
 
