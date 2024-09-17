@@ -5,6 +5,7 @@ import FlujoControl from "@/components/dartPage/FlujoControl";
 import Funciones from "@/components/dartPage/Funciones";
 import Listas from "@/components/dartPage/Listas";
 import Iterables from "@/components/dartPage/Iterables";
+import Conjuntos from "@/components/dartPage/Conjuntos";
 import {
   Accordion,
   AccordionContent,
@@ -57,6 +58,14 @@ function DartPage() {
             <Iterables />
           </AccordionContent>
         </AccordionItem>
+
+        <AccordionItem value="item-Conjuntos">
+          <AccordionTrigger>Conjuntos</AccordionTrigger>
+          <AccordionContent>
+            <Conjuntos />
+          </AccordionContent>
+        </AccordionItem>
+        
       </Accordion>
     </main>
   );

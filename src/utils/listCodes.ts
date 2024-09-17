@@ -143,3 +143,104 @@ export const lista_sort=`void main() {
   print(numbers); // [1, 1, 2, 3, 3, 4, 5, 5, 5, 6, 9]
 }
 `;
+
+// ----------Sets----------
+
+export const conjunto_vacio=`void main() {
+  Set<int> numeros = Set<int>(); // Forma explícita de crear un set vacío
+  print(numeros); // {}
+}
+`;
+
+export const conjunto_con_elementos=`void main() {
+  Set<int> numeros = {1, 2, 3, 4, 5};
+  Set<String> palabras = {'hola', 'mundo'};
+  Set<dynamic> conjuntoDinamico = {1, 'hola', 2.0};
+
+  print(numeros); // {1, 2, 3, 4, 5}
+  print(palabras); // {hola, mundo}
+  print(conjuntoDinamico); // {1, hola, 2.0}
+}
+`;
+
+export const conjunto_acceder_elementos=`void main() {
+  Set<String> fruits = {'Apple', 'Banana', 'Orange'};
+  print(fruits.contains('Apple')); // true
+  print(fruits.contains('Grapes')); // false
+}
+`;
+
+export const conjunto_modificar_elementos=`void main() {
+  Set<int> numeros = {1, 2, 3};
+  
+  // Añadir un solo elemento
+  numeros.add(4);
+  print(numeros); // {1, 2, 3, 4}
+  
+  // Añadir múltiples elementos
+  numeros.addAll([5, 6, 7]);
+  print(numeros); // {1, 2, 3, 4, 5, 6, 7}
+  
+  // Intentar añadir un elemento duplicado
+  numeros.add(3);
+  print(numeros); // {1, 2, 3, 4, 5, 6, 7} (No se añade nuevamente)
+}
+`;
+
+export const conjunto_eliminar_elementos=`void main() {
+  Set<String> frutas = {'Manzana', 'Banana', 'Naranja', 'Banana'};
+  
+  // Eliminar un elemento específico
+  frutas.remove('Banana');
+  print(frutas); // {Manzana, Naranja}
+  
+  // Eliminar elementos que cumplen una condición
+  frutas.removeWhere((fruta) => fruta.startsWith('M'));
+  print(frutas); // {Naranja}
+  
+  // Limpiar el set
+  frutas.clear();
+  print(frutas); // {}
+}
+`;
+
+export const conjunto_operaciones=`void main() {
+  Set<int> numeros1 = {1, 2, 3, 4, 5};
+  Set<int> numeros2 = {4, 5, 6, 7, 8};
+  
+  // Obtener la longitud del set
+  print(numeros.length); // 5
+  
+  // Verificar si el set está vacío
+  print(numeros1.isEmpty); // false
+  
+  // Verificar si el set no está vacío
+  print(numeros2.isNotEmpty); // true
+
+  // Unión de conjuntos
+  var union = numeros1.union(numeros2);
+  print(union); // {1, 2, 3, 4, 5, 6, 7, 8}
+
+  // Intersección de conjuntos
+  var intersection = numeros1.intersection(numeros2);
+  print(intersection); // {4, 5}
+
+  // Diferencia de conjuntos
+  var difference = numeros1.difference(numeros2);
+  print(difference); // {1, 2, 3}
+}
+`;
+
+export const conjunto_iterar=`void main() {
+  Set<int> numeros = {1, 2, 3, 4, 5};
+  
+  // Iterar el conjunto
+  for (var numero in numeros) {
+    print(numero);
+  }
+}
+`;
+
+
+
+

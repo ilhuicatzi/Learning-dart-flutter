@@ -24,7 +24,7 @@ function Listas() {
         Listas{" "}
         <span className="text-transparent group-hover:text-primary">#</span>
       </h2>
-      <p className="">
+      <p>
         Las listas en Dart son una de las estructuras de datos más usadas. Una
         lista es una colección ordenada de elementos, donde cada elemento puede
         accederse mediante un índice. Dart ofrece la clase List para trabajar
