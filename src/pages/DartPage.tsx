@@ -1,11 +1,12 @@
 import Hero from "@/components/dartPage/Hero";
 import HolaMundo from "@/components/dartPage/HolaMundo";
 import Variables from "@/components/dartPage/Variables";
-import FlujoControl from "@/components/dartPage/FlujoControl";
-import Funciones from "@/components/dartPage/Funciones";
 import Listas from "@/components/dartPage/Listas";
 import Iterables from "@/components/dartPage/Iterables";
 import Conjuntos from "@/components/dartPage/Conjuntos";
+import FlujoControl from "@/components/dartPage/FlujoControl";
+import Funciones from "@/components/dartPage/Funciones";
+import Classes from "@/components/dartPage/Classes";
 import {
   Accordion,
   AccordionContent,
@@ -31,20 +32,6 @@ function DartPage() {
           </AccordionContent>
         </AccordionItem>
 
-        <AccordionItem value="item-FlujoControl">
-          <AccordionTrigger>Flujo de control</AccordionTrigger>
-          <AccordionContent>
-            <FlujoControl />
-          </AccordionContent>
-        </AccordionItem>
-
-        <AccordionItem value="item-Funciones">
-          <AccordionTrigger>Funciones</AccordionTrigger>
-          <AccordionContent>
-            <Funciones />
-          </AccordionContent>
-        </AccordionItem>
-
         <AccordionItem value="item-Listas">
           <AccordionTrigger>Listas</AccordionTrigger>
           <AccordionContent>
@@ -65,7 +52,27 @@ function DartPage() {
             <Conjuntos />
           </AccordionContent>
         </AccordionItem>
-        
+
+        <AccordionItem value="item-FlujoControl">
+          <AccordionTrigger>Flujo de control</AccordionTrigger>
+          <AccordionContent>
+            <FlujoControl />
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-Funciones">
+          <AccordionTrigger>Funciones</AccordionTrigger>
+          <AccordionContent>
+            <Funciones />
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-Classes">
+          <AccordionTrigger>Clases</AccordionTrigger>
+          <AccordionContent>
+            <Classes />
+          </AccordionContent>
+        </AccordionItem>
       </Accordion>
     </main>
   );
