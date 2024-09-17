@@ -7,6 +7,7 @@ import Conjuntos from "@/components/dartPage/Conjuntos";
 import FlujoControl from "@/components/dartPage/FlujoControl";
 import Funciones from "@/components/dartPage/Funciones";
 import Classes from "@/components/dartPage/Classes";
+import Mixins from "@/components/dartPage/Mixins";
 import {
   Accordion,
   AccordionContent,
@@ -71,6 +72,13 @@ function DartPage() {
           <AccordionTrigger>Clases</AccordionTrigger>
           <AccordionContent>
             <Classes />
+          </AccordionContent>
+        </AccordionItem>
+
+        <AccordionItem value="item-Mixins">
+          <AccordionTrigger>Mixins</AccordionTrigger>
+          <AccordionContent>
+            <Mixins />
           </AccordionContent>
         </AccordionItem>
       </Accordion>

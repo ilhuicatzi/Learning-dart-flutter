@@ -130,3 +130,59 @@ void main() {
   hacerSonidoAnimal(gato); // El gato maulla.
 }
 `;
+
+
+export const mixins_sintaxis_basica = `mixin NombreMixin {
+  // Definir comportamientos (métodos o propiedades)
+  void accion() {
+    print('Acción del mixin');
+  }
+}
+
+class ClasePrincipal with NombreMixin {
+  // Clase que usa el mixin
+}
+`;
+
+export const mixins_ejemplo = `mixin Volador {
+  void volar() {
+    print('Estoy volando');
+  }
+}
+
+mixin Nadador {
+  void nadar() {
+    print('Estoy nadando');
+  }
+}
+
+class Pato with Volador, Nadador {
+  // Pato puede volar y nadar gracias a los mixins
+}
+
+void main() {
+  var pato = Pato();
+  pato.volar(); // Estoy volando
+  pato.nadar(); // Estoy nadando
+}
+`;
+
+export const mixins_con_propiedades = `mixin Habilidad {
+  String habilidad = 'Desconocida';
+
+  void mostrarHabilidad() {
+    print('Mi habilidad es: $habilidad');
+  }
+}
+
+class Robot with Habilidad {
+  Robot() {
+    habilidad = 'Corte preciso';
+  }
+}
+
+void main() {
+  var robot = Robot();
+  robot.mostrarHabilidad(); // Mi habilidad es: Corte preciso
+}
+`;
